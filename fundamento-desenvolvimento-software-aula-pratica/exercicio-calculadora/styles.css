@@ -1,4 +1,6 @@
 body {
+  display: flex;
+  flex-direction: column;
   width: 99%;
   align-items: center;
   display: flex;
@@ -15,11 +17,32 @@ body {
   border-radius: 10px;
 }
 
+.title {
+  display: flex;
+  padding: 5px;
+  margin-bottom: 10px;
+  align-items: center;
+  border: 1px dashed #fff;
+}
+
+.title button {
+  background-color: yellow;
+  border: none;
+  height: 30px;
+  border-radius: 50px;
+  margin-left: 30px;
+}
+
+.title button:hover{
+    background-color: rgba(255, 255, 0, 0.466);
+}
+
 .container input {
   height: 30px;
   width: 200px;
   border-radius: 2px;
   border: none;
+  font-weight: 700;
 }
 
 .container select {
