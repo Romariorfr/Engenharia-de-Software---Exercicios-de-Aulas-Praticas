@@ -1,0 +1,60 @@
+body {
+  width: 99%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto";
+  background-color: black;
+  color: #fff;
+  padding-top: 200px;
+}
+
+.container {
+  border: 1px solid #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.container input {
+  height: 30px;
+  width: 200px;
+  border-radius: 2px;
+  border: none;
+}
+
+.container select {
+  height: 30px;
+  width: 200px;
+  border: none;
+  border-radius: 2px;
+  font-size: 14px;
+
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.container button {
+  height: 30px;
+  width: 70px;
+  margin-bottom: 20px;
+  background-color: blueviolet;
+}
+
+#valor-A {
+  color: rgba(73, 252, 88, 0.911);
+}
+
+#valor-B {
+  color: yellow;
+}
+
+#resposta {
+  display: flex;
+  align-items: center;
+  border: 1px solid green;
+  height: 30px;
+  background-color: #fff;
+  color: black;
+  padding: 2px;
+  font-weight: 700;
+}
