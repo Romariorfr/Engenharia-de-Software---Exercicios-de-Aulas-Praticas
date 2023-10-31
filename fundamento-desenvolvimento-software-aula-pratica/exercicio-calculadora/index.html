@@ -14,18 +14,18 @@
   </head>
   <body>
     <div class="title">
-        <p>Exercicio calculadora</p>
-        <button id="btn-info">Info</button>
+      <p>Exercicio calculadora</p>
+      <button id="btn-info">Info</button>
     </div>
     <div class="container">
-      <p id="valor-A">valor A</p>
-      <input type="number" />
+      <p class="valor-a">valor A</p>
+      <input type="number" id="campo1" />
 
-      <p id="valor-B">valor B</p>
-      <input type="number" />
+      <p class="valor-b">valor B</p>
+      <input type="number" id="campo2" />
 
       <p>operação:</p>
-      <select name="operação" id="">
+      <select name="operação" id="seletor">
         <option value="soma">soma</option>
         <option value="subtração">subtração</option>
         <option value="divisão">divisão</option>
@@ -33,11 +33,10 @@
       </select>
       <br />
 
-      <button>=</button>
+      <button id="calc">=</button>
 
-      <script src="script.js"></script>
-
-      <div id="resposta">Resposta:</div>
+      <div id="campo3">Resultado: ???</div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -33,8 +33,8 @@ body {
   margin-left: 30px;
 }
 
-.title button:hover{
-    background-color: rgba(255, 255, 0, 0.466);
+.title button:hover {
+  background-color: rgba(255, 255, 0, 0.466);
 }
 
 .container input {
@@ -63,21 +63,20 @@ body {
   background-color: blueviolet;
 }
 
-#valor-A {
+.valor-a {
   color: rgba(73, 252, 88, 0.911);
 }
 
-#valor-B {
+.valor-b {
   color: yellow;
 }
 
-#resposta {
+#campo3 {
   display: flex;
   align-items: center;
   border: 1px solid green;
   height: 30px;
-  background-color: #fff;
-  color: black;
   padding: 2px;
   font-weight: 700;
+
 }
