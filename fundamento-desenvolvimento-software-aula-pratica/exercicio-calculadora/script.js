@@ -4,7 +4,6 @@ const inputA = document.getElementById("campo1");
 const inputB = document.getElementById("campo2");
 let result = document.getElementById("campo3");
 let operacao = document.getElementById("seletor");
-const btnCalc = document.getElementById("calc");
 
 //msg com a descrição da tarefa
 const showInfo =
@@ -19,8 +18,14 @@ btn.addEventListener("click", () => {
   alert(showInfo);
 });
 
+
+
 //evento do botão de igual
-btnCalc.addEventListener("click", () => {
+seletor.addEventListener("change", calcular);
+inputA.addEventListener("keyup",calcular);
+inputB.addEventListener("keyup",calcular);
+
+function calcular(){
   const a = parseInt(inputA.value);
   const b = parseInt(inputB.value);
 
@@ -42,4 +47,5 @@ btnCalc.addEventListener("click", () => {
       result.innerHTML = "Resultado: " + a * b;
     }
   }
-});
+
+}
