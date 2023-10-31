@@ -78,5 +78,8 @@ body {
   height: 30px;
   padding: 2px;
   font-weight: 700;
+}
 
+.erro-op{
+  background-color: red;
 }

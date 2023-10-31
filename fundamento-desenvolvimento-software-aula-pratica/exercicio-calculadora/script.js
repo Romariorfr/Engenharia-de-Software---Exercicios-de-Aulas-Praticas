@@ -24,16 +24,22 @@ btnCalc.addEventListener("click", () => {
   const a = parseInt(inputA.value);
   const b = parseInt(inputB.value);
 
-  if (operacao.value == "soma") {
-    result.innerHTML = "Resultado: " + (a + b);
-  }
-  if (operacao.value == "subtração") {
-    result.innerHTML = "Resultado: " + (a - b);
-  }
-  if (operacao.value == "divisão") {
-    result.innerHTML = "Resultado: " + (a / b);
-  }
-  if (operacao.value == "multiplicação") {
-    result.innerHTML = "Resultado: " + (a * b);
+  if (inputA.value === "" || inputB.value === "") {
+    result.classList.add("erro-op");
+    result.innerHTML = "Campo vazio!";
+  } else {
+    result.classList.remove("erro-op");
+    if (operacao.value == "soma") {
+      result.innerHTML = "Resultado: " + (a + b);
+    }
+    if (operacao.value == "subtração") {
+      result.innerHTML = "Resultado: " + (a - b);
+    }
+    if (operacao.value == "divisão") {
+      result.innerHTML = "Resultado: " + a / b;
+    }
+    if (operacao.value == "multiplicação") {
+      result.innerHTML = "Resultado: " + a * b;
+    }
   }
 });
