@@ -25,15 +25,15 @@ btnCalc.addEventListener("click", () => {
   const b = parseInt(inputB.value);
 
   if (operacao.value == "soma") {
-    result.innerHTML = "Resultado: " + a + b;
+    result.innerHTML = "Resultado: " + (a + b);
   }
   if (operacao.value == "subtração") {
-    result.innerHTML = "Resultado: " + a - b;
+    result.innerHTML = "Resultado: " + (a - b);
   }
   if (operacao.value == "divisão") {
-    result.innerHTML = "Resultado: " + a / b;
+    result.innerHTML = "Resultado: " + (a / b);
   }
   if (operacao.value == "multiplicação") {
-    result.innerHTML = "Resultado: " + a * b;
+    result.innerHTML = "Resultado: " + (a * b);
   }
 });
